@@ -1,6 +1,11 @@
 "use strict";
 
+
 const electron = require('electron')
+
+//automatically load content to electron 
+require('electron-reload')(__dirname);
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -54,4 +59,4 @@ app.on('activate', function () {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
-require('electron-reload')(__dirname);
+
